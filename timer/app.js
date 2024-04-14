@@ -22,7 +22,7 @@ const weekdays = [
 "Saturday",
 ];
 
-const giveaway = document.querySelector(".giveaway");
+const gradDate = document.querySelector(".gradDate");
 const deadline = document.querySelector('.deadline');
 const items = document.querySelectorAll(".deadline-format h4");
 
@@ -44,7 +44,7 @@ const date = futureDate.getDate();
 
 const weekday = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `giveaway ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
+gradDate.textContent = `count-down ends on ${weekday}, ${date} ${month} ${year} ${hours}:${minutes}am`;
 // future time in ms
 const futureTime = futureDate.getTime();
 
